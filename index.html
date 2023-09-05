@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Chat</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <header>
+        <h2>Get<span>Chat</span>().</h2>
+      </header>
+      <div class="info">
+        <div class="bar">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="loginDL">
+          <p><i data-feather="log-in"></i></p>
+          <p><i data-feather="sun"></i></p>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Creator</a></li>
+      </ul>
+    </nav>
+
+    <!-- Chat Fiture -->
+    <div class="chat">
+      <input type="text" name="" id="chat" placeholder="Tulis Pesan.." />
+      <a><i data-feather="send"></i></a>
+    </div>
+    <!-- Chat Fiture -->
+
+    <!-- Info Chat -->
+    <div class="infoChat">
+      <h2>
+        Selamat Datang Di
+        <b>Get<span>Chat</span>().</b>
+      </h2>
+      <p id="p1">Web chat bot buatan NaItzz!!</p>
+      <p>Selamat Bersenang Senang User Terhormat</p>
+      <a href="">Support Saya</a>
+      <span style="font-size: 50px">&#128075;</span>
+    </div>
+    <!-- Info Chat -->
+
+    <script src="./js/index.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
