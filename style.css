@@ -124,8 +124,31 @@ nav li:hover::after {
   gap: 20px;
 }
 
-.chat {
+.chat-view {
   position: absolute;
+  right: 15px;
+  margin-top: 5em;
+  /* background-color: #181818;
+  padding: 10px; */
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.chat-view li {
+  padding: 10px 15px;
+  background-color: rgb(220, 220, 220);
+  list-style: none;
+  font-family: "Rubik", sans-serif;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.chat {
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
