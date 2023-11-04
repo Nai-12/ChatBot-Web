@@ -5,6 +5,14 @@ barList.addEventListener("click", function () {
   navbar.classList.toggle("slide");
 });
 
+document.addEventListener("click", function (e) {
+  if (!barList.contains(e.target) && !navbar.contains(e.target)) {
+    navbar.classList.remove("slide");
+  }
+});
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
   var kirimPesan = document.querySelector(".send");
   var inputPesan = document.getElementById("chat");
@@ -22,3 +30,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+document.querySelector(".reload").addEventListener("click", function () {
+  document.location.reload();
+});
+
+let loginPage = document.querySelector(".login");
+let loginbtn = document.querySelector(".login-btn");
+
+document.querySelector(".login-btn").onclick = () => {
+  loginPage.classList.toggle("view");
+}
+
+document.addEventListener("click", function (e) {
+  if (!loginPage.contains(e.target) && !loginbtn.contains(e.target)) {
+    loginPage.classList.remove("view");
+  }
+});
+
